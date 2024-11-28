@@ -26,18 +26,24 @@ int main() {
     int n;
     cout << "Enter the size of the array: ";
     cin >> n;
+
     vector<int> arr(n);
     cout << "Enter the elements of the array: ";
+
     for(int &i : arr) cin >> i;
+
     unordered_map<int, float> mp;
     float sum = 0;
+
     for(int i = 0; i < n; i++) {
         sum += arr[i];
         mp[i] = sum / (i + 1);  
     }
+
     sum = 0;
     int el = 1;
     bool possible = false;
+
     for(int i = n - 1; i > 0; i--) {
         sum += arr[i];
         float avg = sum / el;
@@ -47,6 +53,7 @@ int main() {
         }
         el++;
     }
+    
     if (possible) cout << "YES" << endl;
     else cout << "NO" << endl;
     return 0;
