@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void draw() {
+void DrawSnake() {
 
 }
 
-void input() {
+void TakeInput() {
 
 }
 
-void logic() {
-    
+void MainLogic() {
+
 }
 
 int main() {
